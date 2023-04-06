@@ -1,0 +1,23 @@
+﻿@page "/product/{id:int?}"
+@model MyApp.Namespace.ProductPageModel
+@{
+    var product = this.Model.product;
+    var products = this.Model._productService.AllProducts();
+    
+}
+@if(product != null){
+    <h1>@product.Name</h1>
+    <h1>@product.Id</h1>
+    <a asp-page="ProductPage" asp-route-id= "@product.Id" asp-page-handler="delete">Delete</a>
+}
+else {
+    foreach (var p in products)
+    {
+        <a asp-page="ProductPage" asp-route-id= "@p.Id">@p.Name</a>
+        <li>
+            @p.Price
+        </li>
+    }
+}
+
+@* <a asp-page-handler="test" class="btn btn-success">Contact Page</a> *@
