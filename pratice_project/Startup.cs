@@ -57,3 +57,5 @@ namespace pratice_project
         }
     }
 }
+//  Binding du lieu:
+// Parameter

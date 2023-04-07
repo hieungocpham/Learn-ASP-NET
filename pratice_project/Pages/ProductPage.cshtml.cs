@@ -21,8 +21,20 @@ namespace MyApp.Namespace
             _logger.LogInformation("Init");
         }
         public Product product {get;set;}
-        public void OnGet()
+        // [FromBody]
+        // [FromQuery]
+        // [FromHeader]
+        // [FromForm]
+        // [FromRoute]
+        public void OnGet([Bind("Id","Name")] Product sanpham)
         {
+            // query
+            // Form
+            // RouteValue
+            // Header
+            var data = this.Request.Query["order"];
+
+            Console.WriteLine(sanpham.Id);
             if(Request.RouteValues["id"] != null){
                 int id = int.Parse( Request.RouteValues["id"].ToString() );
                 message = id.ToString();

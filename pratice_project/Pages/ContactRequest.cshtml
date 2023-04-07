@@ -1,4 +1,4 @@
-@page
+@page "/contact.html"
 @model ContactRequest
 @{
     ViewData["title"] = "lien he";
@@ -6,8 +6,21 @@
 @functions {
     string name = "hiasddeu";
 }
-
+<form  method="post" asp-page="ContactRequest">
+    <label asp-for="@Model.UserId"></label>
+    <input type="text" asp-for="@Model.UserId">
+    <span asp-validation-for="@Model.UserId"></span>
+    <button class="btn btn-danger" type="submit">Submit</button>
+</form>
 <h1 class="display-4">Trang liên hệ</h1>
 <p class="lead">Điền các thông tin liên hệ</p>
-
-@Model.UserId
+<div class="alert alert-danger">
+    <p>Thong tin</p>
+    <ul>
+        <li>UserId: @Model.UserId</li>
+        <li>Username: @Model.Username</li>
+    </ul>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"></partial>
+}
