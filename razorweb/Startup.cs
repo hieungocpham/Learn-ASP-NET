@@ -26,10 +26,12 @@ namespace razorweb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            //  Connect Database
             services.AddDbContext<MyBlogContext>(options => {
                 string connectstring = Configuration.GetConnectionString("MyBlogContext");
                 options.UseSqlServer(connectstring);
             });
+            // End
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,3 +62,10 @@ namespace razorweb
         }
     }
 }
+/*
+CREATE READ Update ,delete (CRUD)
+dotnet ef migrations add [name]
+dotnet ef database update
+dotnet aspnet-codegenerator razorpage -m razorweb.Models.Article -dc razorweb.Models.MyBlogContext -outDir Pages/Blog -udl --referenceScriptLibraries
+
+*/

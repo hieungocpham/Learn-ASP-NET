@@ -144,3 +144,9 @@ C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\razorw
 C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\ref\razorweb.dll
 C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\razorweb.pdb
 C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\razorweb.genruntimeconfig.cache
+C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\Razor\Pages\Blog\Create.cshtml.g.cs
+C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\Razor\Pages\Blog\Delete.cshtml.g.cs
+C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\Razor\Pages\Blog\Details.cshtml.g.cs
+C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\Razor\Pages\Blog\Edit.cshtml.g.cs
+C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\Razor\Pages\Blog\Index.cshtml.g.cs
+C:\Users\Admin\Desktop\New folder\Learn-ASP-NET\razorweb\obj\Debug\net5.0\Razor\Pages\Shared\_Paging.cshtml.g.cs
